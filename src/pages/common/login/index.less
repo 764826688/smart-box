@@ -1,0 +1,190 @@
+@import '~cmcss/constant.less';
+.wrapper {
+  background: url('../../../assets/images/login.png') no-repeat center/cover;
+  width: 388px;
+  height: 398px;
+  .login-body {
+    width: 388px;
+    height: 398px;
+    padding: 51px 36px 35px 43px;
+    .ant-form-item-has-error :not(.ant-input-disabled).ant-input,
+    .ant-form-item-has-error
+      :not(.ant-input-affix-wrapper-disabled).ant-input-affix-wrapper,
+    .ant-form-item-has-error :not(.ant-input-disabled).ant-input:hover,
+    .ant-form-item-has-error
+      :not(.ant-input-affix-wrapper-disabled).ant-input-affix-wrapper:hover,
+    .ant-form-item-has-error .ant-form-item-control-input {
+      background-color: transparent !important;
+      box-shadow: none;
+    }
+    .login-tabs {
+      display: flex;
+      list-style: none;
+      width: 310px;
+      margin: 0;
+      margin-bottom: 31px;
+      padding: 0;
+      .normal-tab {
+        padding-bottom: 9px;
+        text-align: center;
+        width: 50%;
+        border-bottom: 1px solid #346b75;
+        color: #019ba2;
+        font-size: 16px;
+        font-weight: normal;
+        letter-spacing: 1px;
+        cursor: pointer;
+      }
+      .active {
+        border-bottom: 1px solid #01ffff;
+        color: #01ffff;
+      }
+    }
+    .tel {
+      .login-tabs {
+        margin-bottom: 48px;
+      }
+      .ant-btn {
+        margin-top: 40px;
+      }
+    }
+    .form {
+      .ant-input-password-icon {
+        color: #346b75;
+      }
+      input:-webkit-autofill {
+        background-color: transparent !important;
+        -webkit-text-fill-color: #fff !important;
+        caret-color: #fff !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+      input:-internal-autofill-selected {
+        background: transparent !important;
+      }
+      .ant-input {
+        height: 33px;
+        color: #fff;
+        background-color: transparent;
+        &::placeholder {
+          font-size: 14px;
+          color: #02a5ae;
+        }
+      }
+
+      .form-item-input {
+        width: 309px;
+        background: url('../../../assets/images/user_bg.png') no-repeat;
+        border: none;
+        border-radius: 0;
+      }
+      .user-input {
+        .ant-input-prefix img {
+          width: 16px;
+          height: 17px;
+          margin-right: 20px;
+        }
+      }
+      .code-input {
+        .ant-input-prefix img {
+          width: 14px;
+          height: 17px;
+          margin-right: 20px;
+        }
+      }
+      .psword-input {
+        .ant-input-prefix img {
+          width: 13px;
+          height: 17px;
+          margin-right: 20px;
+        }
+      }
+      .input-code {
+        position: relative;
+        width: 309px;
+        display: flex;
+        justify-content: space-between;
+        .form-item-code-ipt {
+          width: 207px;
+          background: url('../../../assets/images/code_bg.png') no-repeat;
+          border: none;
+          border-radius: 0;
+        }
+        .ant-spin-nested-loading {
+          width: 100px;
+          height: 33px;
+          .form-item-code-img {
+            width: 100px;
+            height: 33px;
+            background-color: #fff;
+            svg {
+              width: 100px;
+              height: 33px;
+            }
+          }
+        }
+
+        .changeImg {
+          position: absolute;
+          color: #01c4c9;
+          // color:#fff;
+          top: 33px;
+          left: 210px;
+          font-size: 8px;
+          cursor: pointer;
+        }
+        .form-item-send-code {
+          width: 95px;
+          height: 33px;
+          font-weight: 600;
+          color: #033245;
+          font-size: 14px;
+          background: url('../../../assets/images/send_code.png') no-repeat;
+          border: none;
+          border-radius: 0;
+          margin: 0;
+        }
+        .ant-btn {
+          padding: 0;
+        }
+      }
+    }
+    .ant-input-affix-wrapper {
+      padding: 0 13px;
+    }
+    .login-btn {
+      width: 307px;
+      border: none;
+      border-radius: 0;
+      background: url('../../../assets/images/btn_bg.png') no-repeat;
+      color: #033245;
+      font-weight: 600;
+    }
+    // 按钮在loading时背景色设置
+    .ant-btn::before {
+      background-color: transparent;
+    }
+    .forget {
+      color: #01c4c9;
+      font-size: 14px;
+      margin-top: -24px;
+      cursor: pointer;
+    }
+    .reset {
+      .reset-title {
+        padding-bottom: 9px;
+        text-align: center;
+        border-bottom: 1px solid #346b75;
+        color: #01ffff;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: normal;
+        margin-bottom: 16px;
+        .reset-back {
+          float: left;
+          margin-top: 7px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
